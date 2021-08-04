@@ -30,11 +30,13 @@ mvn clean install
 
 On the `GrpcServer/src/main/java` directory, run the `main` method from the `GrpcServer.java` class.
 
-**To start the Client:**
+**To use the Client:**
 
 On another terminal, run the `main` method from the `GrpcClient.java` class located in the `GrpcClient/src/main/java` directory.
 
-Or, use a _gRPC Client Tool_ such as [BloomRPC](https://github.com/uw-labs/bloomrpc):
+**Using a _gRPC Client Tool_:** 
+
+Such as [BloomRPC](https://github.com/uw-labs/bloomrpc).
 
 _Note: to do so, you'll need to import the [user.proto file](https://github.com/GuillaumeFalourd/poc-grpc-java-maven/blob/main/GrpcServer/src/main/resources/user.proto)._
 
