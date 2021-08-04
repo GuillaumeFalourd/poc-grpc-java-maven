@@ -30,6 +30,8 @@ mvn clean install
 
 - On the `GrpcServer/src/main/java` directory, run the `main` method from the `GrpcServer.java` class.
 
+- _Note: It will run on port `9090`._
+
 **To use the Client:**
 
 - On another terminal, run the `main` method from the `GrpcClient.java` class located in the `GrpcClient/src/main/java` directory.
