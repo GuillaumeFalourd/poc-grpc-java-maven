@@ -4,11 +4,11 @@ POC of a gRPC project in Java using Maven ☕️
 
 ## Project
 
-This project contains 2 services, one for LOGIN and one for LOGOUT.
+This project contains 2 services: one for `LOGIN` and one for `LOGOUT`.
 
-The Login service will return **SUCCESS** if the `username` is the same as the `password` (_responseCode 200_). Otherwise, the Login service will return **INVALID PASSWORD** (_responseCode 400_).
+- The Login service will return **SUCCESS** if the `username` is the same as the `password` (_responseCode 200_). Otherwise, the Login service will return **INVALID PASSWORD** (_responseCode 400_).
 
-The Logout service will always return **LOGOUT SUCCESS** (_respondeCode200).
+- The Logout service will always return **LOGOUT SUCCESS** (_respondeCode200).
 
 ### Setup
 
