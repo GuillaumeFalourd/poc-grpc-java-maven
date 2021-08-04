@@ -36,10 +36,16 @@ On another terminal, run the `main` method from the `GrpcClient.java` class loca
 
 Or, use a _gRPC Client Tool_ such as [BloomRPC](https://github.com/uw-labs/bloomrpc):
 
-<img width="1318" alt="Screen Shot 2021-08-04 at 09 45 06" src="https://user-images.githubusercontent.com/22433243/128184423-b9916696-4476-4b00-a438-b8fc89567cf1.png">
+_Note: to do so, you'll need to import the [user.proto file](https://github.com/GuillaumeFalourd/poc-grpc-java-maven/blob/main/GrpcServer/src/main/resources/user.proto)._
 
-<img width="1320" alt="Screen Shot 2021-08-04 at 09 45 17" src="https://user-images.githubusercontent.com/22433243/128184445-6e7910e5-5e31-457e-98af-bf00e2519caa.png">
+#### Login Success
 
-<img width="1318" alt="Screen Shot 2021-08-04 at 09 47 56" src="https://user-images.githubusercontent.com/22433243/128184472-de32897e-2cb7-41cc-b91b-144832d05819.png">
+<img width="1318" alt="Login Success" src="https://user-images.githubusercontent.com/22433243/128184423-b9916696-4476-4b00-a438-b8fc89567cf1.png">
 
+#### Login Error
 
+<img width="1320" alt="Login Error" src="https://user-images.githubusercontent.com/22433243/128184445-6e7910e5-5e31-457e-98af-bf00e2519caa.png">
+
+#### Logout Success
+
+<img width="1318" alt="Logout Success" src="https://user-images.githubusercontent.com/22433243/128184472-de32897e-2cb7-41cc-b91b-144832d05819.png">
