@@ -14,6 +14,6 @@ public class GrpcClient {
 		userBlockingStub userStub = userGrpc.newBlockingStub(channel);
 		LoginRequest loginrequest = LoginRequest.newBuilder().setUsername("Test").setPassword("Error").build();
 		APIResponse response = userStub.login(loginrequest);
-		System.out.println(response.getResponsemessage());
+		System.out.println(response.getResponseMessage());
 	}
 }
