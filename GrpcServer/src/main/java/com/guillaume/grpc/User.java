@@ -706,14 +706,14 @@ public final class User {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>string responsemessage = 1;</code>
+     * <code>string responseMessage = 1;</code>
      */
-    java.lang.String getResponsemessage();
+    java.lang.String getResponseMessage();
     /**
-     * <code>string responsemessage = 1;</code>
+     * <code>string responseMessage = 1;</code>
      */
     com.google.protobuf.ByteString
-        getResponsemessageBytes();
+        getResponseMessageBytes();
 
     /**
      * <code>int32 responseCode = 2;</code>
@@ -733,7 +733,7 @@ public final class User {
       super(builder);
     }
     private APIResponse() {
-      responsemessage_ = "";
+      responseMessage_ = "";
       responseCode_ = 0;
     }
 
@@ -764,7 +764,7 @@ public final class User {
             case 10: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              responsemessage_ = s;
+              responseMessage_ = s;
               break;
             }
             case 16: {
@@ -805,33 +805,33 @@ public final class User {
     }
 
     public static final int RESPONSEMESSAGE_FIELD_NUMBER = 1;
-    private volatile java.lang.Object responsemessage_;
+    private volatile java.lang.Object responseMessage_;
     /**
-     * <code>string responsemessage = 1;</code>
+     * <code>string responseMessage = 1;</code>
      */
-    public java.lang.String getResponsemessage() {
-      java.lang.Object ref = responsemessage_;
+    public java.lang.String getResponseMessage() {
+      java.lang.Object ref = responseMessage_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        responsemessage_ = s;
+        responseMessage_ = s;
         return s;
       }
     }
     /**
-     * <code>string responsemessage = 1;</code>
+     * <code>string responseMessage = 1;</code>
      */
     public com.google.protobuf.ByteString
-        getResponsemessageBytes() {
-      java.lang.Object ref = responsemessage_;
+        getResponseMessageBytes() {
+      java.lang.Object ref = responseMessage_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        responsemessage_ = b;
+        responseMessage_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -861,8 +861,8 @@ public final class User {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (!getResponsemessageBytes().isEmpty()) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, responsemessage_);
+      if (!getResponseMessageBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, responseMessage_);
       }
       if (responseCode_ != 0) {
         output.writeInt32(2, responseCode_);
@@ -876,8 +876,8 @@ public final class User {
       if (size != -1) return size;
 
       size = 0;
-      if (!getResponsemessageBytes().isEmpty()) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, responsemessage_);
+      if (!getResponseMessageBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, responseMessage_);
       }
       if (responseCode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
@@ -899,8 +899,8 @@ public final class User {
       com.guillaume.grpc.User.APIResponse other = (com.guillaume.grpc.User.APIResponse) obj;
 
       boolean result = true;
-      result = result && getResponsemessage()
-          .equals(other.getResponsemessage());
+      result = result && getResponseMessage()
+          .equals(other.getResponseMessage());
       result = result && (getResponseCode()
           == other.getResponseCode());
       result = result && unknownFields.equals(other.unknownFields);
@@ -915,7 +915,7 @@ public final class User {
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + RESPONSEMESSAGE_FIELD_NUMBER;
-      hash = (53 * hash) + getResponsemessage().hashCode();
+      hash = (53 * hash) + getResponseMessage().hashCode();
       hash = (37 * hash) + RESPONSECODE_FIELD_NUMBER;
       hash = (53 * hash) + getResponseCode();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -1051,7 +1051,7 @@ public final class User {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        responsemessage_ = "";
+        responseMessage_ = "";
 
         responseCode_ = 0;
 
@@ -1081,7 +1081,7 @@ public final class User {
       @java.lang.Override
       public com.guillaume.grpc.User.APIResponse buildPartial() {
         com.guillaume.grpc.User.APIResponse result = new com.guillaume.grpc.User.APIResponse(this);
-        result.responsemessage_ = responsemessage_;
+        result.responseMessage_ = responseMessage_;
         result.responseCode_ = responseCode_;
         onBuilt();
         return result;
@@ -1131,8 +1131,8 @@ public final class User {
 
       public Builder mergeFrom(com.guillaume.grpc.User.APIResponse other) {
         if (other == com.guillaume.grpc.User.APIResponse.getDefaultInstance()) return this;
-        if (!other.getResponsemessage().isEmpty()) {
-          responsemessage_ = other.responsemessage_;
+        if (!other.getResponseMessage().isEmpty()) {
+          responseMessage_ = other.responseMessage_;
           onChanged();
         }
         if (other.getResponseCode() != 0) {
@@ -1167,71 +1167,71 @@ public final class User {
         return this;
       }
 
-      private java.lang.Object responsemessage_ = "";
+      private java.lang.Object responseMessage_ = "";
       /**
-       * <code>string responsemessage = 1;</code>
+       * <code>string responseMessage = 1;</code>
        */
-      public java.lang.String getResponsemessage() {
-        java.lang.Object ref = responsemessage_;
+      public java.lang.String getResponseMessage() {
+        java.lang.Object ref = responseMessage_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          responsemessage_ = s;
+          responseMessage_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string responsemessage = 1;</code>
+       * <code>string responseMessage = 1;</code>
        */
       public com.google.protobuf.ByteString
-          getResponsemessageBytes() {
-        java.lang.Object ref = responsemessage_;
+          getResponseMessageBytes() {
+        java.lang.Object ref = responseMessage_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          responsemessage_ = b;
+          responseMessage_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string responsemessage = 1;</code>
+       * <code>string responseMessage = 1;</code>
        */
-      public Builder setResponsemessage(
+      public Builder setResponseMessage(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        responsemessage_ = value;
+        responseMessage_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string responsemessage = 1;</code>
+       * <code>string responseMessage = 1;</code>
        */
-      public Builder clearResponsemessage() {
+      public Builder clearResponseMessage() {
         
-        responsemessage_ = getDefaultInstance().getResponsemessage();
+        responseMessage_ = getDefaultInstance().getResponseMessage();
         onChanged();
         return this;
       }
       /**
-       * <code>string responsemessage = 1;</code>
+       * <code>string responseMessage = 1;</code>
        */
-      public Builder setResponsemessageBytes(
+      public Builder setResponseMessageBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        responsemessage_ = value;
+        responseMessage_ = value;
         onChanged();
         return this;
       }
@@ -1752,7 +1752,7 @@ public final class User {
     java.lang.String[] descriptorData = {
       "\n\nuser.proto\"2\n\014LoginRequest\022\020\n\010username" +
       "\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\"<\n\013APIResponse\022" +
-      "\027\n\017responsemessage\030\001 \001(\t\022\024\n\014responseCode" +
+      "\027\n\017responseMessage\030\001 \001(\t\022\024\n\014responseCode" +
       "\030\002 \001(\005\"\007\n\005Empty2L\n\004user\022$\n\005login\022\r.Login" +
       "Request\032\014.APIResponse\022\036\n\006logout\022\006.Empty\032" +
       "\014.APIResponseB\024\n\022com.guillaume.grpcb\006pro" +
@@ -1781,7 +1781,7 @@ public final class User {
     internal_static_APIResponse_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_APIResponse_descriptor,
-        new java.lang.String[] { "Responsemessage", "ResponseCode", });
+        new java.lang.String[] { "ResponseMessage", "ResponseCode", });
     internal_static_Empty_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_Empty_fieldAccessorTable = new

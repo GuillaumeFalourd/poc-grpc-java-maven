@@ -22,11 +22,11 @@ public class UserService extends userImplBase{
 		APIResponse.Builder response = APIResponse.newBuilder();
 		if(username.equals(password)) {
 			 // return success message
-			response.setResponseCode(200).setResponsemessage("SUCCESS");
+			response.setResponseCode(200).setResponseMessage("SUCCESS");
 		}
 		else {
 			 // return error message
-			response.setResponseCode(400).setResponsemessage("INVALID PASSWORD");
+			response.setResponseCode(400).setResponseMessage("INVALID PASSWORD");
 		}
 		responseObserver.onNext(response.build());
 		responseObserver.onCompleted();
@@ -36,7 +36,7 @@ public class UserService extends userImplBase{
 	public void logout(Empty request, StreamObserver<APIResponse> responseObserver) {
 		APIResponse.Builder response = APIResponse.newBuilder();
 		// return success message
-		response.setResponseCode(200).setResponsemessage("LOGOUT SUCCESS");
+		response.setResponseCode(200).setResponseMessage("LOGOUT SUCCESS");
 		responseObserver.onNext(response.build());
 		responseObserver.onCompleted();
 	}

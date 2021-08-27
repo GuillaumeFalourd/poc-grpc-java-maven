@@ -13,7 +13,7 @@ message LoginRequest{
 }
 
 message APIResponse{
-    string responsemessage = 1;
+    string responseMessage = 1;
     int32  responseCode  = 2;
 }
 

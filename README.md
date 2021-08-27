@@ -15,13 +15,13 @@ The Logout service will always return **LOGOUT SUCCESS** (_respondeCode200).
 On the `GrpcServer` directory, run:
 
 ```bash
-mvn clean install
+mvn clean generate-sources compile install
 ```
 
 On the `GrpcClient` directory, run:
 
 ```bash
-mvn clean install
+mvn clean generate-sources compile install
 ```
 
 ### Run
