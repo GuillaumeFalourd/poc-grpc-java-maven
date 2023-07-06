@@ -1,6 +1,6 @@
-# gRPC (Google Remote Procedure Call) Java with MAVEN ☕️
+# gRPC (Google Remote Procedure Call) Java with MAVEN
 
-POC of a gRPC project in Java using Maven.
+POC of a gRPC project in Java using Maven ☕️
 
 ## Project
 
