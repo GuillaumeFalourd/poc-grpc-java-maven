@@ -1,4 +1,3 @@
-```markdown
 # gRPC (Google Remote Procedure Call) Java with MAVEN ☕️
 
 POC of a gRPC project in Java using Maven.
